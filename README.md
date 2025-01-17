@@ -1,2 +1,2 @@
 # Spring_Boot_Project
-Here the project are been developed using SpringBoot
+"The projects are being developed using Spring Boot."
