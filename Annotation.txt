@@ -1,0 +1,11 @@
+@Component => 
+This Annotation tells Spring to scan the current package and its sub-packages.Spring component like @Controller,@Service,@Repository,@Component classes so, its automatically discoverd and register as beans in spring context.
+
+@EnableAutoConfiguration =>
+Automatically configure  application based on dependencies that is added in project pom xml.Eg:spring-boot-starter-web.
+
+@SpringBootConfiguration=>
+Spring can be used by spring IoC container as bean defination.
+
+@SpringBootApplication =>@SpringBootConfiguration,@EnableAutoConfiguration,@ComponentScan.
+
