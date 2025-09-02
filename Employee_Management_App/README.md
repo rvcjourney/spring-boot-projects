@@ -16,14 +16,14 @@ The project is built using **React + Vite** for the frontend, **Spring Boot** fo
 
 ## 🏗️ System Architecture
 
-```mermaid
 flowchart TD
-    A[👩‍💻 User] -->|Browser| B[🌐 React + Vite Frontend]
-    B -->|REST API Calls (JSON)| C[⚙️ Spring Boot Backend]
-    C -->|JDBC| D[🗄️ MySQL Database]
+    A[User] -->|Browser| B[React + Vite Frontend]
+    B -->|REST API (JSON)| C[Spring Boot Backend]
+    C -->|JDBC| D[MySQL Database]
     D --> C
     C --> B
     B --> A
+
 
 The user interacts with the React frontend.
 
