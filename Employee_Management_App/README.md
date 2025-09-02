@@ -1,38 +1,114 @@
+# 👨‍💼 Employee Management Web App
 
-# Spring_Boot_Project
-Employee Management System project with full fledge CRUD Operation....
-Tools Used : 
-Frontend : VsCode -> React js + Vite
-Backend : Intellij IDEA -> Java + Spring Boot
-Database : Mysql
-"Create Database 'ems' in Mysql DBMS. [ems->employee management system]
+A **full-stack Employee Management System** with complete **CRUD operations** (Create, Read, Update, Delete).  
 
-**Temporary**
-Download Zip-File of "Employee_Management_App.zip"
+The project is built using **React + Vite** for the frontend, **Spring Boot** for the backend, and **MySQL** as the database.  
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React.js + Vite (IDE: VS Code)  
+- **Backend**: Java 21 + Spring Boot (IDE: IntelliJ IDEA Community)  
+- **Database**: MySQL  
+
+---
+
+## 🏗️ System Architecture
+
+```mermaid
+flowchart TD
+    A[👩‍💻 User] -->|Browser| B[🌐 React + Vite Frontend]
+    B -->|REST API Calls (JSON)| C[⚙️ Spring Boot Backend]
+    C -->|JDBC| D[🗄️ MySQL Database]
+    D --> C
+    C --> B
+    B --> A
+
+The user interacts with the React frontend.
+
+The frontend communicates with the Spring Boot backend through REST APIs.
+
+The backend connects to the MySQL database using JDBC.
+
+🗄️ Database Setup
+
+Before running the application, create a MySQL database:
+
+CREATE DATABASE ems;
 
 
-*****Set_Up****
-1> Unzip "Employee_Management_App.zip" Folder to known Location
-2>Two Folder we bw there i.e > a)B-Employee b)F-Employee\f-employee
-3>
-a)B-Employee [SET_UP/Requirement]
---For Management Intellij IDEA Community Version Used
---Java JDK version 21..
---Mysql Workbench/Command Line Client
-b)f-employee[SET_UP/Requirement]
---For Management VSCode is Used
---Node js
+(ems stands for Employee Management System)
 
-****Excecution****
-a)B-Employee
---After opening 'B-Employee' in Intellij IDEA all Configuration will start,After completion go to file <C:\Users\KJCOEMR\Downloads\Employee_Management_App\B-Employee\src\main\java\com\example\B_Employee\BEmployeeApplication.java>
-Click on "BEmployeeApplication.java"
-Make Sure youe have created database in Mysql as **ems** . Open Mysql database type cmd> **create database ems;**
-Click on -> ▶️  
+📦 Installation & Setup
+1️⃣ Download the Project
 
-b)f-employee
---Open "f-employee" folder in VSCode
---Open its Terminal type cmd >**npm run dev**
+Download the zip file: Employee_Management_App.zip
+
+Extract it to a known location.
+
+You will see two folders:
+
+B-Employee   # Backend (Spring Boot)
+f-employee   # Frontend (React + Vite)
+
+2️⃣ Backend Setup (Spring Boot)
+
+Open the B-Employee folder in IntelliJ IDEA.
+
+Ensure you have:
+
+Java JDK 21 installed
+
+MySQL Workbench/CLI configured
+
+Open this file in IntelliJ:
+
+B-Employee/src/main/java/com/example/B_Employee/BEmployeeApplication.java
 
 
-**Any Query ?  please let me know...**
+Make sure the ems database exists in MySQL.
+
+mysql> create database ems;
+
+
+Run the application by clicking ▶️ in IntelliJ (on BEmployeeApplication.java).
+
+3️⃣ Frontend Setup (React + Vite)
+
+Open the f-employee folder in VS Code.
+
+Make sure Node.js is installed.
+
+Run the following command in the terminal:
+
+npm install
+npm run dev
+
+
+The app will start, and you can open it in your browser (usually on http://localhost:5173).
+
+▶️ Running the App
+
+Backend (Spring Boot) → Runs on port 8080
+
+Frontend (React + Vite) → Runs on port 5173
+
+Make sure both are running to use the full Employee Management System.
+
+📸 Features
+
+➕ Add new employees
+
+📋 View employees list
+
+✏️ Update employee details
+
+❌ Delete employees
+
+🔗 Full integration between frontend ↔ backend ↔ database
+
+❓ Any Questions?
+
+If you face issues while setting up or running the project, feel free to raise an issue or contact me. 🚀
+
